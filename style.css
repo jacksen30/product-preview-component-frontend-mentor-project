@@ -28,7 +28,7 @@ body {
 
 .inner-right-side {
     /* border: solid 1px green; */
-    padding: 30px 44px 0px 44px;
+    padding: 25px 42px 0px 42px;
     width: 50%;
     border-radius: 0px 15px 15px 0px;
     background-color: hsl(0, 0%, 100%);
@@ -43,25 +43,28 @@ body {
 
 .top-heading {
     font-weight: 500;
-    font-size: 1.4rem ;
+    font-size: 1.05rem ;
+    color: hsl(228, 12%, 48%);
 }
 
 .sub-heading {
     margin-top: 15px;
     margin-bottom: 25px;
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-family: 'Fraunces', serif;
     font-weight: 700;
+    padding-right: 2px; /* To make text be on same lines as the Required design */
 }
 
 .description-text {
-    font-size: ;
+   font-size: 0.9rem ; 
+   color: hsl(228, 12%, 48%);
 
 }
 
 .price-container {
     display: flex;
-    margin: 15px 0px 15px 0px;
+    margin: 20px 0px 20px 0px;
     align-items: center;
 }
 .discounted-price {
@@ -69,22 +72,34 @@ body {
     font-size: 1.9rem;
     font-weight: 700;
     color: hsl(158, 36%, 37%);
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .rrp-price {
     font-size: 0.9rem;
     font-family: 'Fraunces', serif;
     text-decoration-line: line-through;
+    color: hsl(228, 12%, 48%);
+    font-weight: 400;
 }
 
 .btn-add-to-cart {
     background-color: hsl(158, 36%, 37%);
     color: white;
     margin-top: 15px;
-    width: 250px;
+    width: 230px;
     height: 55px;
     border-radius: 15px;
     font-size: 1rem;
     font-weight: bold;
+    border: none;
+}
+
+.fa-cart-shopping {
+    margin-right: 10px;
+}
+
+.btn-add-to-cart:hover {
+    background-color: hsl(158, 79%, 19%);
+    cursor: grab;
 }
