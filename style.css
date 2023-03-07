@@ -15,6 +15,7 @@ body {
 
 .preview-card-container {
     display: flex;
+    flex-wrap: wrap;
     border-radius: 10px;
     max-height: 450px;
     width: 630px;
@@ -32,13 +33,19 @@ body {
     width: 50%;
     border-radius: 0px 15px 15px 0px;
     background-color: hsl(0, 0%, 100%);
+    
 }
 
-.product-image {
+.product-image-desktop {
     width: 100%;
     height: 449.5px;
     object-fit: fill;
     border-radius: 15px 0px 0px 15px;
+}
+
+/* Hide mobile image on desktop size screen */
+.product-image-mobile {
+    display: none;
 }
 
 .top-heading {
@@ -102,4 +109,52 @@ body {
 .btn-add-to-cart:hover {
     background-color: hsl(158, 79%, 19%);
     cursor: grab;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .preview-card-container {
+        display: flex;
+        max-height: 450px;
+        width: 330px;
+    }
+
+    .inner-left-side {
+        width: 100%;
+        max-height: 250px;
+        /* border: solid 1px red; */
+    }
+    
+    .inner-right-side {
+        /* border: solid 1px green; */
+        padding: 25px 16px 0px 16px;
+        width: 100%;
+        border-radius: 0px 0px 15px 15px;
+        background-color: hsl(0, 0%, 100%);
+        
+    }
+    
+    .product-image-mobile {
+        display: flex;
+        width: 100%;
+        height: 449.5px;
+        object-fit:cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    /* Hide Desktop Image When Viewing On Smaller Screen */
+
+    .product-image-desktop {
+        display: none;
+    }
+
+    .price-container {
+        margin: 10px 0px 10px 0px;
+    }
+
+    .btn-add-to-cart {
+        width: 290px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
 }
