@@ -24,11 +24,9 @@ body {
 .inner-left-side {
     width: 50%;
     max-height: 450px;
-    /* border: solid 1px red; */
 }
 
 .inner-right-side {
-    /* border: solid 1px green; */
     padding: 25px 42px 0px 42px;
     width: 50%;
     border-radius: 0px 15px 15px 0px;
@@ -102,20 +100,20 @@ body {
     border: none;
 }
 
-.fa-cart-shopping {
-    margin-right: 10px;
-}
-
 .btn-add-to-cart:hover {
     background-color: hsl(158, 79%, 19%);
     cursor: grab;
 }
 
+.fa-cart-shopping {
+    margin-right: 10px;
+}
+
+
 @media screen and (max-width: 600px) {
     
     .preview-card-container {
-        display: flex;
-        max-height: 450px;
+        height: 480px;
         width: 330px;
     }
 
@@ -137,8 +135,8 @@ body {
     .product-image-mobile {
         display: flex;
         width: 100%;
-        height: 449.5px;
-        object-fit:cover;
+        height: 240px;
+        object-fit:fill;
         border-radius: 15px 15px 0px 0px;
     }
 
@@ -148,13 +146,29 @@ body {
         display: none;
     }
 
-    .price-container {
-        margin: 10px 0px 10px 0px;
+    .top-heading {
+        font-size: 0.9rem ;
+    }
+    
+    .sub-heading {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 1.7rem;
+        padding-right: 10px; /* To make text be on same lines as the Required design */
+    }
+    
+    .description-text {
+       font-size: 0.89rem ; 
+
     }
 
+    .price-container {
+        margin: 18px 0px 15px 0px;
+    }
+    
     .btn-add-to-cart {
         width: 290px;
         margin-top: 0px;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
 }
