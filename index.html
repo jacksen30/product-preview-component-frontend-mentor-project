@@ -9,18 +9,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet"> 
 
   <link rel="stylesheet" href="style.css">
-  <script src="https://kit.fontawesome.com/5b0bc60eb6.js" crossorigin="anonymous"></script> <!-- Font Awesome Import -->
   <title>Frontend Mentor | Product preview card component</title>
 
 </head>
 <body>
   <main>
     <div class="preview-card-container">
-      <div class="inner-left-side">
+      <div class="inner-image-container">
        <img class="product-image-desktop" src="./images/image-product-desktop.jpg" alt="perfume bottle" />
        <img class="product-image-mobile" src="./images/image-product-mobile.jpg" alt="perfume bottle" />
       </div>
-      <div class="inner-right-side">
+      <div class="inner-text-container">
         <h1 class="top-heading">PERFUME</h1>
 
         <h2 class="sub-heading">Gabrielle Essence Eau De Parfum</h2>
@@ -33,7 +32,10 @@
           <span class="rrp-price">$169.99</span>
         </p>
 
-        <button class="btn btn-add-to-cart"><i class="fa-solid fa-cart-shopping"></i>Add to Cart</button>
+        <button class="btn btn-add-to-cart">
+          <img class="cart-logo" src="./images/icon-cart.svg" alt="shopping cart logo" />
+          Add to Cart
+        </button>
       </div>
     </div>
   
