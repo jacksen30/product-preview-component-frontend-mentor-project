@@ -30,5 +30,5 @@ This is my personal solution to the [Product preview card component challenge on
 
 ## Author
 
-- Website - [Jacksen Nillson](https://www.quotemkr.com)
+- Website - [Jacksen Nillson](https://www.devbyjacksen.com)
 - Frontend Mentor - [@jacksen30](https://www.frontendmentor.io/profile/jacksen30)
